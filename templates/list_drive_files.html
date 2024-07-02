@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Drive Files</title>
+</head>
+<body>
+    <h1>Files in Google Drive:</h1>
+    <ul>
+    {% for file in files %}
+        <li>{{ file.name }} - <a href="{% url 'download_file' file.id %}">Download</a></li>
+    {% empty %}
+        <li>No files found.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
