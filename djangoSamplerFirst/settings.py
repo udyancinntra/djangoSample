@@ -76,22 +76,22 @@ WSGI_APPLICATION = 'djangoSamplerFirst.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':'world', 
-        'USER': 'root',
-        'PASSWORD': 'user',
-        'HOST': 'localhost',  
-        'PORT': '3306',
-        'OPTIONS': # these help us in managing various database-specific issues and optimizing the connection
-        {
-            'sql_mode':'traditional',
-            'charset':'utf8mb4',
-            'use_unicode':True
-        }
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME':'world', 
+#         'USER': 'root',
+#         'PASSWORD': 'user',
+#         'HOST': 'localhost',  
+#         'PORT': '3306',
+#         'OPTIONS': # these help us in managing various database-specific issues and optimizing the connection
+#         {
+#             'sql_mode':'traditional',
+#             'charset':'utf8mb4',
+#             'use_unicode':True
+#         }
+#     }
+# }
 
 
 
